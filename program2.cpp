@@ -1,17 +1,18 @@
 #include<iostream>
-#include<string>
 using namespace std;
 class batsman{
+    private:
     int bcode, inning, notout, runs, batavg;
-    string bname;
+    char bname[20];
     void calcavg(){
         batavg=runs/(inning-notout);
     }
     public:
-    void readdata(string h){
+    void readdata(){
         cout<<"Enter Batsman Code : ";
         cin>>bcode;
-        bname = h;
+        cout<<"Enter Batsman name : ";
+        cin>>bname;
         cout<<"Enter Played Inning : ";
         cin>>inning;
         cout<<"Enter Not-Out Inning : ";
@@ -22,7 +23,7 @@ class batsman{
     }
     void displaydata(){
         cout<<"Batsman Code : "<<bcode<<endl;
-        cout<<"Batsman Name : "<<bname<<endl;
+        cout<<"Batsman name : "<<bname<<endl;
         cout<<"Played Inning : "<<inning<<endl;
         cout<<"Not-Out Inning : "<<notout<<endl;
         cout<<"Batsman Runs : "<<runs<<endl;
@@ -31,6 +32,6 @@ class batsman{
 };
 int main(){
     batsman b;
-    b.readdata("Mahendrasing Dhoni");
+    b.readdata();
     b.displaydata();
 }
