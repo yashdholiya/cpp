@@ -1,6 +1,7 @@
 #include<iostream>
 using namespace std;
 class base{
+    private:
     int a;
     protected:
     int b;
