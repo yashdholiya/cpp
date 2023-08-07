@@ -3,7 +3,8 @@ using namespace std;
 class km  
 {
 
-    private:
+     private:
+   
 
     int flightnumber;
     int destination;
@@ -29,7 +30,7 @@ class km
 
         }
 
-        public:
+         public:
 
         void  FEEDINFO (){
             cout<<"enter the flight number"<<flightnumber<<endl;
@@ -46,7 +47,7 @@ class km
 
 
         }
-    }
+    
 };
 
 
@@ -54,4 +55,6 @@ int main()
 {
 km f;
 f.FEEDINFO ();
+
+
 };

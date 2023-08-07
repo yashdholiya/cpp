@@ -1,5 +1,6 @@
 {
     "files.associations": {
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "DOWHILE1.C": "cpp"
     }
 }

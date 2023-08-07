@@ -35,8 +35,8 @@ class  dreave2: public base{
     {
         cout<<"\n"<<i;
     }
-    // cout<<"enter the number :"<<endl;
-    // cin>>n;
+        //cout<<"enter the number :"<<endl;
+        // cin>>n;
       
     }
 
